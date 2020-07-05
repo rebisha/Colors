@@ -33,15 +33,15 @@ const Colors = () => {
     return rgbArray;
   };
 
-  var discreetColors = [];
+  var discreteColors = [];
   for (var i = 1; i <= 32768; i++) {
     const colors = shuffle(steps);
-    discreetColors.push(colors);
+    discreteColors.push(colors);
   }
 
   return (
     <div className="color-wrapper">
-      {discreetColors.map(item => (
+      {discreteColors.map(item => (
         <div
           className="color"
           style={{ backgroundColor: `rgb(${item.r},${item.g}, ${item.b})` }}
