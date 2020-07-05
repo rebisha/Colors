@@ -1,4 +1,4 @@
-## Color
+## Colors
 
 This is a React application that displays an image with 32,768 discrete colors.
 
