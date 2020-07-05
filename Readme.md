@@ -1,8 +1,8 @@
 ## Color
 
-This is a React application that displays a list of products fetching through the API. The application also provides the user an option to filter the products on the basis of sizes
+This is a React application that displays an image with 32,768 discrete colors.
 
-Once you either clone the project or download the zip file, go inside the folder (`Color`) and run `npm install` in the cmd.
+Once you either clone the project or download the zip file, go inside the folder (`Colors`) and run `npm install` in the cmd.
 
 ### `npm start`
 
