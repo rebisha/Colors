@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es2020": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "plugins": ["react", "react-hooks"],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+
+    "rules": {
+        "arrow-parens": ["error", "as-needed"],
+        "comma-dangle": 0,
+        "linebreak-style": ["error", "windows"],
+        "max-len": ["error", 200],
+        "no-console": 1,
+        "no-var": "off",
+        "quotes": [2, "double", "avoid-escape"],
+        "react/jsx-uses-vars": 1
+    }
+}
