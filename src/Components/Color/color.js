@@ -1,5 +1,6 @@
 // global modules
-import React from "react";
+import React, { useState } from "react";
+import { func } from "prop-types";
 // styles
 import "./color.scss";
 
@@ -33,15 +34,15 @@ const Colors = () => {
     return rgbArray;
   };
 
-  var discreteColors = [];
+  var discreetColors = [];
   for (var i = 1; i <= 32768; i++) {
     const colors = shuffle(steps);
-    discreteColors.push(colors);
+    discreetColors.push(colors);
   }
 
   return (
     <div className="color-wrapper">
-      {discreteColors.map(item => (
+      {discreetColors.map(item => (
         <div
           className="color"
           style={{ backgroundColor: `rgb(${item.r},${item.g}, ${item.b})` }}
